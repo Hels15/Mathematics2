@@ -9,6 +9,8 @@
 \usepackage{tikz}
 \usepackage{xcolor}
 \usepackage{tcolorbox}
+\usepackage[a4paper, margin=1in]{geometry}
+
 \newtheorem{definition}{Definition}
 
 \author{Hadhzy Organisation}
@@ -22,81 +24,39 @@
 \maketitle
 
 \tableofcontents
+\newpage 
+\chapter{Precalculus}
+\section{Implicit and Explicit functions}
+
+\include{precalc/main}
+\section{Functions}
+\include{precalc/Functions/main}
+\section{Trig}
+\include{precalc/trig/main}
 
 \chapter{Limits and continuity}
-Limits are values that a function approaches as it goes to a certain point. 
+\include{Limits/main}
 
-There are numerous ways to find limits: direct substitution, factor and reduce or multiply by the conjugate, and L'Hopital's rule, limits can be also determinated graphically.
-
-\textbf{Note}: Approaching a value doesn't mean reaching it. It's fine if the function doesn't reach the value, as long as it gets close to it.
-
-\highlightmath{
-\[
-\lim_{x \to 2} \frac{x}{x^2}
-\]
-}
-\textbf{Read as}: The limit as \( x \) approaches 2 of \( x \) over \( x \) squared.
-
-\section{Continuity}
-
-\section{One sided limits}
-
-\section{Examples}
 
 \chapter{Derivatives}
+\include{Derivatives/main}
 
-\chapter{Related Rates}
+\chapter{Integrals}
+\include{Indefinite/main}
 
-\chapter{Indefinite Integrals}
+\chapter{Differential Equations}
+\include{Differential-Equations/main}
 
-\section{Reversing the chain rule}
-
-\chapter{The Definite Integral}
-
-\section{Integrating with respect to y}
-
-\section{Odd and even}
-\section{Area between curves}
-\section{U substitution}
-
-\section{Integration with respect to y}
-\chapter{Application of the definite integral}
-\chapter{Trigonometry}
-
-\highlightmath{
-\[
-let f(x) \text{ be a function defined on a closed interval} [a, b]
-\]
-}
 \chapter{Summation}
-
+\include{Summation/main}
 
 \chapter{Series and Sequences}
+\include{SeriesandSequences/main}
 
 \chapter{Complex Numbers}
-Complex numbers are in the form of \( a + bi \), where \( a \) and \( b \) are real numbers and \( i \) is the imaginary unit.
-i.e. \( i = \sqrt{-1} \)
-
-\(i^2 = -1\)
-
-\section{General form and polar form of complex numbers}
-The \textbf(polar form of a complex number) is \(r \cos (\theta) + i \sin(\theta)\)
-
-General form \(\mathbb{Z} = a + bi\)
-
-\section{Complex conjugate}
-\section(Argand diagram)
-
-\section{Complex numbers as roots of cubic equations}
-
-\section{Demoivre's theorem}
-
-\section{Proof of Demoivre's theorem}
-
-\chapter{Squeeze Theorem}
-\chapter{Limits of Finite Sums}
+\include{ComplexNumbers/main}
 
 \chapter{Geometry}
-
+\include{Geometry/main}
 
 \end{document}
